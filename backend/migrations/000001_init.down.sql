@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS sales_analytics;
+DROP TABLE IF EXISTS orders;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS customers;

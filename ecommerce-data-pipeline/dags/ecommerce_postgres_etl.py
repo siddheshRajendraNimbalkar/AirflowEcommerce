@@ -70,7 +70,7 @@ def ecommerce_postgres_etl():
                 order["order_id"] is not None
                 and order["total_amount"] is not None
                 and order["total_amount"] > 0
-                and order["order_status"] != "CANCELLED"
+                and str(order["order_status"]).upper() != "CANCELLED"
             ):
                 valid_orders.append(order)
 

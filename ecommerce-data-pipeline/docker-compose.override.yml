@@ -1,0 +1,17 @@
+
+services:
+  api-server:
+    environment:
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "False"
+
+  scheduler:
+    environment:
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "False"
+
+  dag-processor:
+    environment:
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "False"
+
+  triggerer:
+    environment:
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "False"
